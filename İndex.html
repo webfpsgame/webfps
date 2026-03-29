@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Web FPS Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="crosshair">+</div>
+
+    <div id="joystick-zone"></div>
+    <button id="shoot-btn">ATEŞ</button>
+
+    <div id="instructions">
+        <h1>Web FPS</h1>
+        <p>Hareket: WASD | Ateş: TIKLA | Bakış: MOUSE</p>
+        <p>Mobil: Sol ekran joystick, Sağ buton ateş</p>
+        <button id="start-btn">OYUNA BAŞLA</button>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="game.js"></script>
+</body>
+</html>
